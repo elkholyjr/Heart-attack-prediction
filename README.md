@@ -94,7 +94,3 @@ Evaluation metrics output:
 
 ---
 
-## 📌 Author
-
-Built with ❤️ by [Your Name]
-
