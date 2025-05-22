@@ -1,5 +1,5 @@
 
-# 🫀 Heart Attack Prediction using Logistic Regression
+# Heart Attack Prediction using Logistic Regression and Xgboost
 
 This project aims to predict the likelihood of heart disease using machine learning, specifically Logistic Regression. It involves data preprocessing, feature engineering, training, and evaluating a classification model using the [Heart Disease dataset
 
