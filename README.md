@@ -5,7 +5,7 @@ This project aims to predict the likelihood of heart disease using machine learn
 
 ---
 
-## 📁 Dataset
+## Dataset
 
 The dataset (`heart.csv`) contains clinical parameters of patients such as:
 
@@ -18,31 +18,31 @@ The dataset (`heart.csv`) contains clinical parameters of patients such as:
 
 ---
 
-## 🧪 Project Workflow
+## Project Workflow
 
-### 1. 📥 Data Loading and Exploration
+### 1. Data Loading and Exploration
 - Load dataset using `pandas`
 - Check for missing values and understand feature distributions
 - Visualize data using `seaborn.pairplot()`
 
-### 2. 🧠 Feature Engineering
+### 2. Feature Engineering
 - Create a new binary feature `low_thalach` based on whether the `thalach` (maximum heart rate) is below the median
 
 ```python
 heartData['low_thalach'] = heartData['thalach'].apply(lambda x: 1 if x < median_thalach else 0)
 ```
 
-### 3. 🧹 Preprocessing
+### 3. Preprocessing
 - Select relevant features for prediction
 - Split the dataset into training (80%) and testing (20%) sets
 - Standardize features using `StandardScaler`
 
-### 4. 🤖 Modeling
+### 4. Modeling
 - Use `LogisticRegression` to model the binary target variable
 - Fit the model on the training data
 - Predict target values on test data
 
-### 5. 📊 Evaluation Metrics
+### 5. Evaluation Metrics
 - **Accuracy**
 - **Confusion Matrix** (visualized with `seaborn`)
 - **Precision, Recall, F1-Score**
@@ -50,7 +50,7 @@ heartData['low_thalach'] = heartData['thalach'].apply(lambda x: 1 if x < median_
 
 ---
 
-## 📈 Results
+## Results
 
 Evaluation metrics output:
 
@@ -60,7 +60,7 @@ Evaluation metrics output:
 
 ---
 
-## 🛠️ Libraries Used
+## Libraries Used
 
 - `pandas`
 - `matplotlib`, `seaborn`
@@ -69,7 +69,7 @@ Evaluation metrics output:
 
 ---
 
-## 💡 Insights
+## Insights
 
 - Maximum heart rate (`thalach`) is a significant indicator.
 - Logistic Regression performs well on normalized data.
@@ -77,7 +77,7 @@ Evaluation metrics output:
 
 ---
 
-## 🚀 Future Work
+## Future Work
 
 - Try other classifiers like Random Forest, SVM
 - Hyperparameter tuning
@@ -86,7 +86,7 @@ Evaluation metrics output:
 
 ---
 
-## 📎 How to Run
+## How to Run
 
 1. Clone the repository
 2. Make sure `heart.csv` is in the root directory
